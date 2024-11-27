@@ -38,7 +38,7 @@ sequelize.sync({alter: true}) .then(async () => { console.log('Database & tables
 );
 
 app.get('/', (req,res)=>{
-    res.send("<h1>Hello friends,</h1> Welcome to my library I will guide to every step you want please use postman to check the library database check these routes https://booksapi-ujro.onrender.com/books, https://booksapi-ujro.onrender.com/books/recommendations for other crud operations please use postman")
+    res.send("<h1>Hello friends,</h1> Welcome to my library I will guide to every step you want please use postman to check the library database check <a href="https://booksapi-ujro.onrender.com/books">books</a>, <a href="https://booksapi-ujro.onrender.com/books/recommendations">recommendations</a> these routes for other crud operations please use <b>postman</b>")
 })
 
 app.get("/books",async (req,res)=>{
